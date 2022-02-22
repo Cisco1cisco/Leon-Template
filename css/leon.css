@@ -1,0 +1,44 @@
+/* Variables start */
+
+/* Variables end */
+
+/* Global Rules start */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+/* Global Rules end */
+
+.container {
+    margin: auto;
+    background-color: red;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 750px;
+    }
+}
+
+.parent {
+    background-color: #eee;
+}

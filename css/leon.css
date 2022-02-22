@@ -166,3 +166,36 @@ div.intro-text p {
     line-height: 1.8;
 }
 /*Landing section End*/
+
+/* features Section Start */
+div.features {
+    background-color: #f6f6f6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+div.features div.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    gap: 20px;
+}
+
+div.features div.container div.feat {
+    text-align: center;
+    padding: 20px;
+}
+
+div.features div.container div.feat i {
+    color: var(--main-color);
+}
+
+div.features div.container div.feat h3 {
+    font-weight: 800;
+}
+
+div.features div.container div.feat p {
+    color: #777;
+    font-size: 17px;
+    line-height: 1.8;
+}
+/* features Section End */

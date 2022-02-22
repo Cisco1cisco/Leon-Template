@@ -1,5 +1,7 @@
 /* Variables start */
-
+:root {
+    --main-color: #10cab7;
+}
 /* Variables end */
 
 /* Global Rules start */
@@ -27,13 +29,13 @@ body {
 
 @media (min-width: 992px) {
     .container {
-        width: 750px;
+        width: 970px;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        width: 750px;
+        width: 1170px;
     }
 }
 /* Global Rules end */
@@ -55,6 +57,7 @@ header .container img {
 
 header .container .links {
     position: relative;
+    z-index: 1;
 }
 
 header .container .links .icon {
@@ -71,7 +74,7 @@ header .container .links .icon:hover span:nth-child(2) {
 header .container .links .icon span {
     background-color: #333333;
     margin-bottom: 5px;
-    height: 3px;
+    height: 2px;
     width: 100%;
 }
 
@@ -130,3 +133,36 @@ header .container .links ul li a:hover {
     padding-left: 25px;
 }
 /* Header End*/
+
+/*Landing section Start*/
+div.landing {
+    height: calc(100vh - 64px);
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+div.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    text-align: center;
+    width: 320px;
+}
+
+div.intro-text h1 {
+    color: var(--main-color);
+    font-size: 50px;
+    margin: 0;
+}
+
+div.intro-text p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+/*Landing section End*/

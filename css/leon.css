@@ -8,6 +8,7 @@
 /* Global Rules start */
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {

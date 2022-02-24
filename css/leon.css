@@ -2,6 +2,7 @@
 :root {
     --main-color: #10cab7;
     --sec-color: #2c4755;
+    --section-padding: 60px;
 }
 /* Variables end */
 
@@ -188,8 +189,8 @@ div.intro-text p {
 /* features Section Start */
 div.features {
     background-color: #f6f6f6;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 div.features div.container {
@@ -219,8 +220,8 @@ div.features div.container div.feat p {
 /* features Section End */
 /* Services Start */
 div.services {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 div.services .container .services-content {
@@ -301,3 +302,51 @@ div.services .container .services-content .col .image img {
 }
 
 /* Services End */
+
+/* Protfolio Start */
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: #f6f6f6;
+}
+
+.portfolio .container .special-heading + p {
+    text-align: center;
+    margin: -30px 0 0;
+}
+
+.portfolio .container .portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.portfolio .container .portfolio-content .card {
+    background-color: white;
+}
+
+.portfolio .container .portfolio-content .card .info {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .portfolio .container .portfolio-content .card .info {
+        text-align: center;
+    }
+}
+
+.portfolio .container .portfolio-content .card .info h3 {
+    margin: 0;
+}
+
+.portfolio .container .portfolio-content .card .info p {
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: #777;
+}
+
+.portfolio .container .portfolio-content img {
+    max-width: 100%;
+}
+/* Protfolio End */

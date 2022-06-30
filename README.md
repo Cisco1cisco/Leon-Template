@@ -1,1 +1,3 @@
-# Temp-1-leon
+# Leon-Template
+
+![Alt Text](./images/site.png)
